@@ -1,0 +1,12 @@
+25-04-2022:
+
+Me quede en la leccion jQuery - Set Content and Attributes
+https://www.w3schools.com/jquery/jquery_dom_set.asp
+
+https://www.w3schools.com/jquery/exercise_jq.asp?filename=exercise_jq_dom_set1
+
+Contenido:
+
+- Eventos ................................ Events_my_jquery_functions.js
+- Efectos Show / Hide, Fade / Slide ...... Fade_Slide_my_jquery_functions.js
+- Animaciones ............................ Animate_my_jquery_functions.js

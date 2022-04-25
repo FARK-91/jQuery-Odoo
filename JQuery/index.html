@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <!--JQuery CDN-->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        <script src="my_jquery_functions.js"></script>
+    </head>
+    <style> 
+        #panel, #flip {
+          padding: 5px;
+          text-align: center;
+          background-color: #e5eecc;
+          border: solid 1px #c3c3c3;
+        }
+        
+        #panel {
+          padding: 50px;
+          display: none;
+        }
+    </style>
+    <body>
+        <!--From here start JQuery Show / Hide effects-->
+        <h2>This is a heading</h2>
+
+        <p>If you click on the "Hide" button, I will disappear.</p>
+
+        <button id="hide">Hide</button>
+        <button id="show">Show</button></br>
+
+        <h3>If you click on the "Hide" button, I will disappear.</h3>
+
+        <button id="hide1">Hide</button>
+        <button id="show1">Show</button></br></br>
+
+        <span>This is a paragraph with little content.</span></br>
+        <span>This is another small paragraph.</span></br></br>
+
+        <button id="toggle">Toggle between hiding and showing the paragraphs</button></br></br>
+
+        <!--From here start JQuery Slide effects-->
+        <div id="flip">Click to slide down panel</div>
+        <div id="panel">Hello world!</div>
+
+        <!--From here start JQuery text(), html(), val(), attr() methods-->
+
+        <p class="test">This is some <b>bold</b> text in a paragraph.</p>
+        <p><a href="https://www.w3schools.com" id="w3s">W3Schools.com</a></p>
+        <p>Name: <input type="text" value="Mickey Mouse"></p>
+
+        <button id="btn1">Show Text</button>
+        <button id="btn2">Show HTML</button>
+        <button id="btn3">Show Value</button>
+        <button id="btn4">Show Attribute</button>
+
+        <!--From here start JQuery animations-->
+
+        <p id="p1" >jQuery is fun!!</p>
+
+        <button id="chainButton">Click me</button></br></br>
+
+
+        <button id="animate">Start Animation</button>
+        <p>
+            By default, all HTML elements have a static position, 
+            and cannot be moved. To manipulate the position, 
+            emember to first set the CSS position property of the element to relative, 
+            fixed, or absolute!
+        </p>
+
+        <div class="animate" style="background:#98bf21;height:100px;width:100px;position:absolute;"></div>
+    </body>
+</html>
