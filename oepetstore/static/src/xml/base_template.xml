@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<templates xml:space="preserve">
+    <t t-name="oepetstore.template">
+        <div style="background-color: red;" class="some-div">
+            <p>Nothing to do!</p>
+            <span class="val"><t t-esc="widget.count"/></span>
+            <button>Increment</button>
+        </div>
+    </t>
+</templates>
