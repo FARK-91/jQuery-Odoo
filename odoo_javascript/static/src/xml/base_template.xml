@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<templates xml:space="preserve">
+    <t t-name="odoo_javascript.template">
+        <div style="background-color: red;" class="">
+            <p>Nothing to do!</p>
+            <span class="val"><t t-esc="widget.count"/></span><br></br>
+            <button>Increment</button>
+        </div>
+    </t>
+
+    <t t-name="odoo_javascript.template2">
+        <div style="background-color: blue;" class="">
+            <p style="color: white;">Nothing to do!</p>
+            <span class="val" style="color: white;"><t t-esc="widget.count"/></span><br></br>
+            <button>Increment</button>
+        </div>
+    </t>
+</templates>

@@ -1,0 +1,5 @@
+
+Widget Guidelines: https://www.odoo.com/documentation/13.0/es/developer/reference/javascript/javascript_reference.html#widget-guidelines
+
+Interst:
+web.assets_backend: this bundle contains the code specific to the web client (notably the web client/action manager/views)

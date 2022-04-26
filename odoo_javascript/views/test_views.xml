@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <data>
+
+        <!-- Top menu item -->
+        <!--Como crear un widget JS asociado a una vista totalmente nueva-->
+        <!-- <menuitem id="petstore_menu" name="Pet Store" parent="contacts.menu_contacts" sequence="2"/>
+
+        <record id="action_home_page" model="ir.actions.client">
+            <field name="name">Pet Store Home</field>
+            <field name="tag">petstore.homepage</field>
+        </record>
+
+        <menuitem id="home_page_petstore_menu" name="Home Page" parent="petstore_menu" action="action_home_page"/> -->
+
+        <!--Como crear un widget JS asociado a una vista formulario-->
+        <record model="ir.ui.view" id="widget_page_form">
+            <field name="name">widget_page_form</field>
+            <field name="model">test.model</field>
+            <field name="type">form</field>
+            <field name="arch" type="xml">
+                <form string="Test">
+                    <group class="mt-0">
+                        <widget name="widget_homepage"/>
+                    </group>
+                </form>
+            </field>
+        </record>
+
+        <record model="ir.actions.act_window" id="home_page_action">
+            <field name="name">home_page_action</field>
+            <field name="res_model">test.model</field>
+            <field name="view_mode">form</field>
+        </record>
+
+        <menuitem id="test_menu" name="Javascript Module" parent="contacts.menu_contacts" sequence="2"/>
+        <menuitem id="home_page_petstore_widget_menu" name="Counter Widget" parent="test_menu" action="home_page_action"/>
+
+    </data>
+</odoo>
