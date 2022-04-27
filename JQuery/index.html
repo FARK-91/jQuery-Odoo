@@ -17,6 +17,24 @@
           padding: 50px;
           display: none;
         }
+
+        .important {
+            font-weight: bold;
+            font-size: xx-large;
+        }
+
+        .blue {
+            color: blue;
+        }
+
+        #div1 {
+            height: 100px;
+            width: 300px;
+            padding: 10px;
+            margin: 3px;
+            border: 1px solid blue;
+            background-color: lightblue;
+        }
     </style>
     <body>
         <!--From here start JQuery Show / Hide effects-->
@@ -80,6 +98,32 @@
         <button id="btn11">Prepend text</button>
         <button id="btn12">Prepend list items</button>
 
+        <!--From here start CSS manipulating-->
+        <h1 class="header1">Heading 1</h1>
+        <h2 class="header2">Heading 2</h2>
+
+        <p class="test4">This is a paragraph.</p>
+        <p class="test4">This is another paragraph.</p>
+        <p class="test5">This is another paragraph.</p>
+
+        <div class="div1">This is some important text!</div>
+        <div class="div2">This is some text.</div><br>
+
+        <button id="btn13">Add classes to elements</button>
+        <button id="btn14">Remove classes to elements</button>
+        <button id="btn15">Toggle class to elements</button>
+        <button id="btn16">Set CSS attribute</button><br>
+
+        <!--From here start JQuery Dimentions-->
+        <div id="div1"></div>
+        <br>
+
+        <button id="btn17">Display dimensions of div</button>
+        <button id="btn18">Resize div</button>
+
+        <p class="test6">innerWidth() - returns the width of an element (includes padding).</p>
+        <p class="test6">innerHeight() - returns the height of an element (includes padding).</p>
+        
         <!--From here start JQuery animations-->
 
         <p id="p1" >jQuery is fun!!</p>

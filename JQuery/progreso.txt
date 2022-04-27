@@ -1,7 +1,7 @@
 25-04-2022:
 
-Me quede en la leccion jQuery - Get and Set CSS Classes
-https://www.w3schools.com/jquery/jquery_css_classes.asp
+Me quede en la leccion jQuery Traversing
+https://www.w3schools.com/jquery/jquery_traversing_ancestors.asp
 
 
 Contenido:
@@ -11,3 +11,4 @@ Contenido:
 - Animaciones ............................ Animate_my_jquery_functions.js
 - Get / Set Methods ...................... Get_Set_my_jquery_functions.js
 - Append / Prepend / Remove / Empty ...... Append_Prepend_Remove_my_jquery_functions.js
+- CSS manipulantin and dimentions resize . CSS_manipulating_my_jquery_functions.js
