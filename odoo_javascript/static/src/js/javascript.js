@@ -16,6 +16,7 @@ odoo.define("odoo_javascript.Sample", function (require) {
 
     var Counter = Widget.extend({
         template: 'odoo_javascript.template',
+        // We use xmlDependencies when file upload from manifest is not needed
         xmlDependencies: ['/odoo_javascript/static/src/xml/base_template.xml'],
         events: {
             'click button': '_onClick',
@@ -43,6 +44,16 @@ odoo.define("odoo_javascript.Sample", function (require) {
     // prependTo(): inserts it as the first child of the target.
     // insertAfter(): inserts it as the preceding sibling of the target.
     // insertBefore(): inserts it as the following sibling of the target.
+
+    // Generic form tu create a widget:
+    // var CorrectWidget = Widget.extend({
+    //     start: function () {
+    //         var self = this;
+    //         return this._super.apply(arguments).then(function() {
+    //             self.$el.hasClass(....) // this works, no promise is lost and the code executes in a controlled order: first super, then our code.
+    //         });
+    //     },
+    // });
 
     /*************************************************/
 

@@ -16,7 +16,7 @@
         'views/test_views.xml'
     ],
     'qweb': [
-        "static/src/xml/base_template.xml"
+        # "static/src/xml/base_template.xml"
     ],
     'installable': True,
     'auto_install': False,

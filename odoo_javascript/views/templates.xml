@@ -5,6 +5,7 @@
         <xpath expr="." position="inside">
             <script type="text/javascript" src="/odoo_javascript/static/src/js/javascript.js"/>
             <script type="text/javascript" src="/odoo_javascript/static/src/js/widget_view_form.js"/>
+            <script type="text/javascript" src="/odoo_javascript/static/src/js/widget_event_system.js"/>
         </xpath>
     </template>
 </odoo>
