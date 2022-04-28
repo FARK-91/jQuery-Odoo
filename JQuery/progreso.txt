@@ -12,3 +12,5 @@ Contenido:
 - Get / Set Methods ...................... Get_Set_my_jquery_functions.js
 - Append / Prepend / Remove / Empty ...... Append_Prepend_Remove_my_jquery_functions.js
 - CSS manipulantin and dimentions resize . CSS_manipulating_my_jquery_functions.js
+- Decendants,Siblings,Filters Methods..... Decendants_Siblings_Filters_my_jquery_functions.js
+- Interesting filter implementation ...... https://www.w3schools.com/jquery/jquery_filters.asp

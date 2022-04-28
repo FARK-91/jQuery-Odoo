@@ -1,4 +1,4 @@
-odoo.define("odoo_javascript.Sample", function (require) {
+odoo.define("odoo_javascript.Counter", function (require) {
     "use strict";
     // var rpc = require("web.rpc");
     // var utils = require('web.utils');
@@ -13,6 +13,7 @@ odoo.define("odoo_javascript.Sample", function (require) {
     /*************************************************/
 
     var Widget = require('web.Widget');
+    var session = require('web.session');
 
     var Counter = Widget.extend({
         template: 'odoo_javascript.template',
@@ -25,19 +26,22 @@ odoo.define("odoo_javascript.Sample", function (require) {
             this._super(params);
             this.count = params.count;
         },
-        _onClick: function () {
+        _onClick: function (e) {
             this.count++;
             console.log(this.count)
             this.$('.val').text(this.count);
+            // this.trigger_up('valuechange', {value: 8});
         },
     });
+
 
     // Create the instance
     var counter = new Counter({'count': 4});
     // Render and insert into DOM
     counter.appendTo(".o_web_client");
     console.log("Esto es una prueba de como instanciar un widget.")
-    console.log(counter)
+    console.log(session)
+    console.log(session.username)
 
     // Inserting Widget in the DOM
     // appendTo(): inserts it as the last child of the target.
