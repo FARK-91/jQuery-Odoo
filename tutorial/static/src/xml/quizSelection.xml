@@ -1,0 +1,14 @@
+<!--?xml version="1.0" encoding="UTF-8"?--> 
+
+<templates xml:space="preserve">
+    <div t-name="tutorial.QuizSelection" class="tutorial-quiz">                                
+        <h2>Choose a quiz:</h2>                                
+        <ul>                                    
+            <li t-foreach="widget.quizzes" t-as="quiz">                                        
+            <button t-att-data-quiz="quiz">                                            
+                <t t-esc="quiz.toUpperCase()"></t>                                        
+            </button>                                    
+            </li>                                
+        </ul>                            
+    </div>
+</templates>

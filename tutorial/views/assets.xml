@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<odoo>
+    <template id="assets_backend" name="tutorial assets" inherit_id="web.assets_backend">
+        <xpath expr="." position="inside">
+            <script type="text/javascript" src="/tutorial/static/src/js/tutorial_quiz.js"></script>
+            <!-- <link rel="stylesheet" type="text/css" href="/tutorial/static/src/css/hello_world.css"></link> -->
+        </xpath>
+    </template>
+</odoo>                    
