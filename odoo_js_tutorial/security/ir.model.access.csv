@@ -1,0 +1,3 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_odoo_tutorial_admin,access_odoo_tutorial_admin,model_odoo_tutorial,base.group_system,1,1,1,1
+access_odoo_tutorial_user,access_odoo_tutorial_user,model_odoo_tutorial,base.group_user,1,1,1,0

@@ -1,0 +1,53 @@
+<!--?xml version="1.0" encoding="UTF-8"?-->    
+
+<templates xml:space="preserve">
+  <!-- tutorial.ClientAction Widget -->
+  <div t-name="tutorial.ClientAction">      
+    <h1 class="text-center">Tutorial Quiz</h1>    
+  </div>
+
+  <!-- tutorial.Quiz Widget -->
+  <div t-name="tutorial.Quiz" class="tutorial-quiz">
+    <div>
+      <t t-set="current" t-value="widget.questions[widget.current]"/>
+        <h2 class="question">                                    
+          <t t-esc="current.question"/>
+        </h2>
+        <div class="answers">                                    
+          <div t-foreach="current.choices" t-as="choice">                                        
+            <button>
+              <span t-att-data-choice="choice"><t t-esc="choice"/>: <t t-esc="current.choices[choice]"/></span>
+            </button>
+          </div>
+        </div>
+    </div>
+    <div class="float-right">Quiz:
+      <t t-esc="widget.quizName"></t>.                                    
+      <t t-esc="widget.current + 1"></t>/
+      <t t-esc="widget.questions.length"></t>
+    </div>
+  </div>
+
+  <!-- tutorial.Resume Widget -->
+  <div t-name="tutorial.Resume" class="tutorial-quiz">
+    <h2>Summary</h2>                                
+    <div>                                    
+      <div t-foreach="widget.questions" t-as="current" class="quiz-correction">                                        
+        <div>Question
+          <t t-esc="current_index + 1"></t>:                                            
+          <t t-esc="current.question"></t>                                        
+        </div>                                        
+        <div>Correct answer:                                            
+          <t t-esc="current.answer"></t> (
+          <t t-esc="current.choices[current.answer]"></t>)                                        
+        </div>
+        <t t-set="user_answer" t-value="widget.answers[current_index]"/>                                        
+          <div>Your answer:
+            <t t-esc="user_answer"></t>. (
+            <t t-esc="current.choices[user_answer]"></t>)                                        
+          </div>
+      </div>                                
+    </div>                                
+    <button>Back</button>
+  </div>
+</templates>
