@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<odoo>
+    <template id="odoo_tutorial_assets_backend" name="tutorial assets" inherit_id="web.assets_backend">
+        <xpath expr="." position="inside">
+            <script type="text/javascript" src="/javascript_reference/static/src/js/person.js"></script>
+            <script type="text/javascript" src="/javascript_reference/static/src/js/pirat.js"></script>
+            <script type="text/javascript" src="/javascript_reference/static/src/js/crew_member.js"></script>
+            <script type="text/javascript" src="/javascript_reference/static/src/js/widget_extend.js"></script>
+            <script type="text/javascript" src="/javascript_reference/static/src/js/instance_object.js"></script>
+            <!-- <link rel="stylesheet" type="text/css" href="/tutorial/static/src/css/hello_world.css"></link> -->
+        </xpath>
+    </template>
+</odoo>                    
