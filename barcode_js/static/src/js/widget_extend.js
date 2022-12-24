@@ -1,4 +1,4 @@
-odoo.define('javascript_reference.WidgetExtend', function(require) {
+odoo.define('barcode_js.CustomLinesWidget', function(require) {
     "use strict"
 
     var Widget = require('web.Widget');

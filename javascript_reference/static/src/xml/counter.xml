@@ -1,12 +1,19 @@
 <!--?xml version="1.0" encoding="UTF-8"?-->    
 
 <templates xml:space="preserve">
-  <div t-name="some.template" class="tutorial-counter">
-    <button>Increment</button>
-    &amp;nbsp;
-    <h3>
-       Value: 
-      <span class="val"><t t-esc="widget.count"/></span>
-    </h3>
+  <div t-name="some.template" class="tutorial-counter col-md-12">
+    <div class="counter-phone col-md-6">
+      <button>Increment</button>
+      &amp;nbsp;
+      <h3>
+        Value: 
+        <span class="val"><t t-esc="widget.count"/></span>
+      </h3>
+    </div>
+    <div class="counter-phone col-md-6">
+      <h3>
+        <span class="phone"><t t-esc="widget.data"/></span>
+      </h3>
+    </div>
   </div>
 </templates>

@@ -1,7 +1,6 @@
 odoo.define('javascript_reference.Person', function(require) {
     "use strict";
-
-    console.log('person.js File loaded...')
+    
     var Class = require('web.Class');
 
     var Person = Class.extend({

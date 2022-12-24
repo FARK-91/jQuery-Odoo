@@ -1,8 +1,6 @@
 odoo.define('javascript_reference.CrewMember', function(require) {
     "use strict"
 
-    console.log('CrewMember.js File loaded...')
-
     var Person = require('javascript_reference.Person');
 
     var Dancing = {
