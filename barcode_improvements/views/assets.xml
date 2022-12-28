@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<odoo>
+    <template id="odoo_tutorial_assets_backend" name="tutorial assets" inherit_id="web.assets_backend">
+        <xpath expr="." position="inside">
+            <script type="text/javascript" src="/barcode_improvements/static/src/js/lines_widget.js"></script>
+        </xpath>
+    </template>
+</odoo>                    
