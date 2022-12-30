@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<odoo>
+    <template id="inherit_website_sale_payment" inherit_id="website_sale.payment" customize_show="True" name="widget email template">
+        <xpath expr="//div[@id='payment_method'][hasclass('js_payment')]" position="before">
+            <div class="col-sm-12">
+                <br/>
+                <h3 class="mb24">Gift card is valid for a year from issue date </h3>
+                <label style="display: inline-block">
+                    <input style="vertical-align: middle; width: 20px; margin-right: 10px;"
+                    type="checkbox" id="custom_email"
+                    name="custom_email"/>
+                    <span style="vertical-align: middle">
+                        Customize Your Gift Card Email
+                    </span>
+                </label>
+                <br/>
+            </div>
+            <div class="col-sm-12 email_edit" style="margin-bottom: 20px; display: none;">
+                <label class="mb-1 text-primary" for="email_template">
+                    <span class="font-weight-bold">Email Template</span>
+                </label>
+                <textarea name="email_template" 
+                    id="email_template" 
+                    style="min-height: 120px" 
+                    class="form-control o_wysiwyg_loader email_edit">
+                    <t t-esc="email_template"/>
+                </textarea>
+            </div>
+        </xpath>
+    </template>
+</odoo>                    
