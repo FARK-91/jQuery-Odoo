@@ -7,7 +7,7 @@
                 <br/>
                 <h3 class="mb24">Pick up from store</h3>
                 <div class="form-group">
-                    <select class="form-control" id="pickup_selection" t-att-data-sale="order_id" t-att-data-totalQty="total_order_qty">
+                    <select class="form-control" id="pickup_selection" t-att-data-sale="order_id" t-att-data-totalqty="total_order_qty">
                         <option value="" selected="true" disabled="true"></option>
                         <t t-foreach="pickup_options" t-as="pickup">
                             <option t-att-id="pickup[0].id" t-att-data-qty="pickup[2]">

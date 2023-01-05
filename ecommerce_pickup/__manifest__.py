@@ -18,5 +18,6 @@
     'data': [
         'views/assets.xml',
         'views/templates.xml',
+        'views/sale.xml',
     ]
 }

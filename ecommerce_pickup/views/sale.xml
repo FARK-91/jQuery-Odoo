@@ -1,0 +1,40 @@
+<odoo>
+  <data>
+    <record id="inherit_view_order_form" model="ir.ui.view">
+      <field name="name">inherit.view.order.form</field>
+      <field name="model">sale.order</field>
+      <field name="inherit_id" ref="sale.view_order_form"/>
+      <field name="arch" type="xml">
+        <xpath expr="//notebook/page[@name='other_information']/group[2]" position="after">
+            <group>
+              <group name="sale_pickup" string="Pick up from store">
+                <field name="pickup_from_store" nolabel="1"/>
+              </group>
+          </group>
+        </xpath>
+      </field>
+    </record>
+
+    <record id="inherit_view_order_tree" model="ir.ui.view">
+      <field name="name">inherit.view.order.tree</field>
+      <field name="model">sale.order</field>
+      <field name="inherit_id" ref="sale.view_order_tree"/>
+      <field name="arch" type="xml">
+        <xpath expr="//field[@name='invoice_status']" position="after">
+          <field name="pickup_from_store" widget="badge" optional="show"/>
+        </xpath>
+      </field>
+    </record>
+
+    <record id="inherit_view_quotation_tree" model="ir.ui.view">
+      <field name="name">inherit.view.quotation.tree</field>
+      <field name="model">sale.order</field>
+      <field name="inherit_id" ref="sale.view_quotation_tree"/>
+      <field name="arch" type="xml">
+        <xpath expr="//field[@name='invoice_status']" position="after">
+          <field name="pickup_from_store" widget="badge" optional="show"/>
+        </xpath>
+      </field>
+    </record>
+  </data>
+</odoo>
