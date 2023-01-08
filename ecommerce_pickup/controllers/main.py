@@ -2,21 +2,10 @@
 
 import json
 import logging
-# from datetime import datetime
 from werkzeug.exceptions import Forbidden, NotFound
 
 from odoo import fields, http, SUPERUSER_ID, tools, _
 from odoo.http import request
-# from odoo.addons.base.models.ir_qweb_fields import nl2br
-# from odoo.addons.http_routing.models.ir_http import slug
-# from odoo.addons.payment.controllers.portal import PaymentProcessing
-# from odoo.addons.website.controllers.main import QueryURL
-# from odoo.addons.website.models.ir_http import sitemap_qs2dom
-# from odoo.exceptions import ValidationError
-# from odoo.addons.portal.controllers.portal import _build_url_w_params
-# from odoo.addons.website.controllers.main import Website
-# from odoo.addons.website_form.controllers.main import WebsiteForm
-# from odoo.osv import expression
 _logger = logging.getLogger(__name__)
 from odoo.addons.website_sale.controllers import main
 
@@ -58,8 +47,6 @@ class WebsiteSale(main.WebsiteSale):
                             if qty.product_id.id == product:
                                 available_qty += qty.available_quantity
                 pickups.append([item,item.get_warehouse(),available_qty])
-        print(pickups)
-        print(order)
         render_values['pickup_options'] = pickups
         render_values['order_id'] = order.id
         render_values['total_order_qty'] = total_order_qty
@@ -73,13 +60,13 @@ class WebsiteSale(main.WebsiteSale):
         sale_obj = request.env['sale.order'].browse(int(order_id))
         try:
             sale_id = sale_obj.write({'pickup_from_store': int(location_id)})
-            return json.dumps(True)
+            return json.dumps({
+                'message': 'Record store success',
+                'status_code': 200
+            })
         except Exception as exception:
             _logger.warning(exception)
-            return json.dumps(False)
-        
-        # if sale_id:
-        #     return json.dumps(True)
-        # else:
-        #     _logger.warning(exception)
-        #     return json.dumps(False)
+            return json.dumps({
+                'message': 'Store process failed',
+                'status_code': 500
+            })
