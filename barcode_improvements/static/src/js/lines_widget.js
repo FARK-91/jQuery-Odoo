@@ -32,7 +32,9 @@ odoo.define('barcode_improvements.CustomLinesWidget', function(require) {
                 doneQty: doneQty
             }));
             $header.append($pageSummary);
-            $header[0].childNodes[0].remove()
+            if($header[0].childNodes.length > 1){
+                $header[0].childNodes[0].remove()
+            }
         }
 
     })
